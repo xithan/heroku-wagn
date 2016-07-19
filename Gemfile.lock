@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/xithan/wagn
-  revision: 94f5ad25e54a68f55ecd8cad330a78c76962680a
+  revision: f6464651c0ebcbdc1ce175a695dc00e57f96de4f
+  branch: heroku
   specs:
     card (1.18.7)
       bootstrap-kaminari-views (~> 0)
