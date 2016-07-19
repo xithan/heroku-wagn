@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 
-gem 'wagn', :git => 'https://github.com/xithan/wagn', branch: 'heroku'
+gem 'wagn' #, :git => 'https://github.com/xithan/wagn', branch: 'heroku'
 
 
 gem 'pg'
