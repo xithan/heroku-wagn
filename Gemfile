@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 
-gem 'wagn', path: 'vendor/wagn'
+gem 'wagn', :path => 'vendor/wagn'
 
 
 gem 'pg'
