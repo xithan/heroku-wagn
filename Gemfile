@@ -5,6 +5,8 @@ gem 'wagn' #, :git => 'https://github.com/xithan/wagn', branch: 'heroku'
 
 
 gem 'pg'
+gem 'rails_12factor'
+
 # Use Unicorn or Thin as server
 # gem 'unicorn'
 # gem 'thin'
