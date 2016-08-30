@@ -46,5 +46,25 @@ module HerokuWagn
 
     # config.override_protocol = nil
     # don't autodetect protocol (http/https) from web requests
+
+    config.file_storage = :cloud
+    config.file_default_bucket = :aws_bucket
+    config.file_buckets = {
+      aws_bucket: {
+        provider: "fog/aws",
+        directory: "philipp-test",
+        subdirectory: "files",
+        credentials: {
+           provider: 'AWS',                         # required
+           region: 'eu-central-1'                  # optional, defaults to 'us-east-1'
+           #host: 's3.example.com'                  # optional, defaults to nil
+           #endpoint: 'https://s3.example.com:8080' # optional, defaults to nil
+        },
+        attributes: { "Cache-Control" => "max-age=#{365.day.to_i}" },
+        public: true,
+        authenticated_url_expiration: 180  # if public is set to false this
+                                           # option is needed
+      }
+    }
   end
 end
